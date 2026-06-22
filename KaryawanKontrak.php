@@ -28,10 +28,9 @@ class KaryawanKontrak extends Karyawan {
         return $daftarKaryawan;
     }
 
-    // Kewajiban implementasi metode dari kelas abstrak induk
+    // Overriding method untuk menghitung total pendapatan bersih karyawan kontrak
     public function hitungGajiBersih() {
-        // Logika bisnis lengkap akan di-override di Tahap 5
-        return 0;
+        return $this->hariKerjaMasuk * $this->gajiDasarPerHari;
     }
 
     public function tampilkanProfilKaryawan() {

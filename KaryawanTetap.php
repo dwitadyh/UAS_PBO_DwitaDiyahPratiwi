@@ -28,10 +28,10 @@ class KaryawanTetap extends Karyawan {
         return $daftarKaryawan;
     }
 
-    // Kewajiban implementasi metode dari kelas abstrak induk
+    // Overriding method untuk menghitung total pendapatan bersih karyawan tetap
     public function hitungGajiBersih() {
-        // Logika bisnis lengkap akan di-override di Tahap 5
-        return 0;
+        $gajiPokok = $this->hariKerjaMasuk * $this->gajiDasarPerHari;
+        return $gajiPokok + $this->tunjanganKesehatan;
     }
 
     public function tampilkanProfilKaryawan() {

@@ -28,10 +28,10 @@ class KaryawanMagang extends Karyawan {
         return $daftarKaryawan;
     }
 
-    // Kewajiban implementasi metode dari kelas abstrak induk
+    // Overriding method untuk menghitung total pendapatan bersih karyawan magang
     public function hitungGajiBersih() {
-        // Logika bisnis lengkap akan di-override di Tahap 5
-        return 0;
+        $plafonHarian = $this->hariKerjaMasuk * $this->gajiDasarPerHari;
+        return $plafonHarian * 0.80; // Potongan 20% untuk orientasi/pelatihan
     }
 
     public function tampilkanProfilKaryawan() {
