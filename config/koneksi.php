@@ -5,7 +5,7 @@ class Database {
     private $host = "localhost";
     private $username = "root";
     private $password = "";
-    private $db_name = "nama_database_kamu"; // Ganti sesuai nama database di MySQL-mu
+    private $db_name = "db_uas_pbo_ti1c_dwitadiyahpratiwi"; // Ganti sesuai nama database di MySQL-mu
     protected $conn;
 
     public function getConnection() {
